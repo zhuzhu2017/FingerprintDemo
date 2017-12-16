@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FingerprintDemo</string>
+    <string name="fingerprint_verify_success">指纹识别成功</string>
 </resources>

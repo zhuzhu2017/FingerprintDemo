@@ -3,7 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context="com.allen.fingerprintdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="开启指纹验证" />
+
+        <com.allen.fingerprintdemo.togglebutton.ToggleButton
+            android:id="@+id/finger_print_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_symmetry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="指纹识别对称加密算法实现"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_asymmetry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="指纹识别非对称加密算法实现"
+        android:visibility="gone" />
 
 
 </LinearLayout>

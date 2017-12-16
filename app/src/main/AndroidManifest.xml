@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SymmetryActivity" />
+        <activity android:name=".AsymmetryActivity" />
+        <activity android:name=".LoginActivity"/>
     </application>
 
 </manifest>
