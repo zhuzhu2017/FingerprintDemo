@@ -25,7 +25,7 @@ import butterknife.Unbinder;
  * Created by allen on 2017/12/16.
  */
 
-public class FingerprintDialogFragment extends DialogFragment {
+public class FingerprintDialogFragment extends DialogFragment implements FingerprintUIHelper.IVerifyCallback {
 
     @BindView(R.id.fingerprint_icon)
     ImageView fingerprintIcon;
@@ -129,5 +129,21 @@ public class FingerprintDialogFragment extends DialogFragment {
                 dismiss();
                 break;
         }
+    }
+
+    /**
+     * 验证成功，后续操作与后台交互
+     */
+    @Override
+    public void onSuccess() {
+
+    }
+
+    /**
+     * 多次验证后失败
+     */
+    @Override
+    public void onError() {
+        uiHelper.stopListening();
     }
 }

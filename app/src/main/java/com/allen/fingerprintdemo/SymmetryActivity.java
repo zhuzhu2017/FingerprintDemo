@@ -67,7 +67,8 @@ public class SymmetryActivity extends AppCompatActivity implements VerifyFingerp
     @Override
     public void supportFingerprint() {
         /*已经录入指纹，进行指纹识别操作*/
-        FingerprintManagerCompat.CryptoObject cryptoObject = FingerprintUtil.getInstance().symmetryFingerprintVerify(Constants.KEY_NAME);
+        FingerprintManagerCompat.CryptoObject cryptoObject = FingerprintUtil.getInstance()
+                .symmetryFingerprintVerify(Constants.KEY_NAME);
         dialogFragment.setCryptoObject(cryptoObject);
         dialogFragment.show(getFragmentManager(), Constants.DIALOG_FRAGMENT_TAG);
     }

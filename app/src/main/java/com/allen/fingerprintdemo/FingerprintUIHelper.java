@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 public class FingerprintUIHelper extends FingerprintManagerCompat.AuthenticationCallback {
 
-    private static final int STATUS_TEXT_CHANGE_DELAY = 1500;
-    private static final int SUCCECC_CALLBACK_DELAY = 1500;
+    private static final int STATUS_TEXT_CHANGE_DELAY = 1000;
+    private static final int SUCCECC_CALLBACK_DELAY = 1000;
 
     private FingerprintManagerCompat mCompat;   //指纹管理器
     private CancellationSignal cancellationSignal;
